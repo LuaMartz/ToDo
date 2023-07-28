@@ -1,0 +1,12 @@
+<div>
+  <h1> To Do List</h1>
+  <label for="addItemInput">¿Qué tenemos que hacer hoy?</label>
+  <input #newItem
+  placeholder="Agregar un pendiente"
+  (keyup.enter)="addItem(newItem.value); newItem.value= ''"
+  class="lg-text-input"
+  id="addItemInput">
+  <button class="btn-primary" (click)="addItem(newItem.value); newItem.value=''">Agregar</button>
+  <ul>
+    <li *ngFor="let item of items">{{item.description}} </li>
+  </ul>
