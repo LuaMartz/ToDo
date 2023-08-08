@@ -7,13 +7,6 @@ import { Item } from './item';
   styleUrls: ['./app.component.css']
 })
 
-@Component({
-  selector: 'app-item',
-  templateUrl: './item.component.html',
-  styleUrls: ['./item.component.css']
-})
-
-
 export class AppComponent {
   addItem(description: string) {  // Fixed parameter name
     this.allItems.unshift({
