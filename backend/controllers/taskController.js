@@ -1,15 +1,15 @@
 const Task = require('../models/taskModel');
 
 const taskController = {
-    createTask: async (req, res) => {
-        try {
-          const { title, description, date, status } = req.body;
-          const task = await Task.create({ title, description, date, status });
-          res.json({ msg: 'Task created', task });
-        } catch (error) {
-          res.status(500).json({ msg: error.message });
-        }
-      },
+  createTask: async (req, res) => {
+    try {
+      const { title, description, date, status } = req.body;
+      const task = await Task.create({ title, description, date, status });
+      res.json({ msg: 'Task created', task });
+    } catch (error) {
+      res.status(500).json({ msg: error.message });
+    }
+  },
 
   getTasks: async (req, res) => {
     try {
