@@ -7,7 +7,7 @@ const cors = require('cors'); // Importa el modulo cors
 const taskRoutes = require('./routes/taskRoutes');
 
 const app = express();
-const port = 3003;
+const port = 3005;
 
 // Configura las opciones de CORS
 const corsOptions = {
@@ -38,8 +38,3 @@ mongoose
     console.error('Error connecting to MongoDB:', error);
     console.log(process.env.MONGO_DB_URI); 
   });
-  
-// Inicia el servidor
-app.listen(3003, () => {
-  console.log('Servidor corriendo en el puerto 3003');
-});

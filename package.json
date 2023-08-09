@@ -1,5 +1,5 @@
 {
-  "name": "to-do-list",
+  "name": "todo",
   "version": "1.0.0",
   "description": "En este proyecto, los estudiantes aprenderán a desarrollar un backend utilizando Node.js y Express para crear una API de un To-Do List. A lo largo del curso, explorarán conceptos fundamentales de backend, como la creación de endpoints, almacenamiento de datos en una base de datos, manejo de solicitudes y respuestas.",
   "main": "index.js",
