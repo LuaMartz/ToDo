@@ -1,14 +1,31 @@
 {
-  "name": "todo",
-  "version": "0.0.0",
+  "name": "to-do-list",
+  "version": "1.0.0",
+  "description": "En este proyecto, los estudiantes aprenderán a desarrollar un backend utilizando Node.js y Express para crear una API de un To-Do List. A lo largo del curso, explorarán conceptos fundamentales de backend, como la creación de endpoints, almacenamiento de datos en una base de datos, manejo de solicitudes y respuestas.",
+  "main": "index.js",
   "scripts": {
-    "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "angular:build": "ng build",
     "test": "ng test"
   },
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuaMartz/ToDoList.git"
+  },
+  "keywords": [
+    "Express",
+    "JavaScript",
+    "Node.js",
+    "Angular"
+  ],
+  "author": "Luisa Martinez (LuArtemz)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuaMartz/ToDoList/issues"
+  },
+  "homepage": "https://github.com/LuaMartz/ToDoList#readme",
   "dependencies": {
     "@angular/animations": "^16.1.0",
     "@angular/common": "^16.1.0",
@@ -18,6 +35,9 @@
     "@angular/platform-browser": "^16.1.0",
     "@angular/platform-browser-dynamic": "^16.1.0",
     "@angular/router": "^16.1.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.4.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
