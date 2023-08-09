@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class TodoService {
-  private baseUrl = 'http://localhost:3005'; // URL de tu backend
+  private baseUrl = 'http://localhost:3003'; // URL de tu backend
 
   constructor(private http: HttpClient) {}
 
